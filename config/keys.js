@@ -25,6 +25,10 @@ module.exports = {
             dbURI: 'mongodb://test:test@ds135747.mlab.com:35747/my-app-db'
 
         },
+        email: {
+            user: 'mysong.notification@gmail.com',
+            password: 'hratx30teamcrt'
+        },
         session: {
             cookieKey: 'thenetninjaisawesomeiguess'
         }

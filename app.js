@@ -56,13 +56,13 @@ const client = new Twitter({
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'theodore.pinkett@gmail.com',
-    pass: 'bobby1905'
+    user: keys.email.user,
+    pass: keys.email.password
   }
 });
 
 var mailOptions = {
-  from: 'theodore.pinkett@gmail.com',
+  from: keys.email.user,
   to: 'miachildrensbooks@gmail.com',
   subject: 'Sending Email using Node.js',
   text: 'That was easy!'
