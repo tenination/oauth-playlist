@@ -30,18 +30,62 @@
                 padding: 10px;
                 display: block;
             }
-            main, header{
+            header{
                 max-width: 960px;
+                width:;
                 margin: 30px auto;
                 padding: 0 10px;
                 color: #333;
             }
+
             .google-btn{
                 color: #fff;
                 text-decoration: none;
                 font-size: 18px;
                 padding: 10px;
                 background: #ff5353;
+                margin-left: 20px;
+            }
+            .twitter-btn{
+                text-decoration: none;
+                font-size: 18px;
+                min-width: 100px;
+                min-height: 100px;
+                padding: 10px 10px 10px 170px;
+                margin-left: 20px;
+                background-image: url("https://www.inyoursoup.com/images/signup-with-twitter-button@8x.png");
+                background-size: cover;
+            }
+            .facebook-btn{
+                text-decoration: none;
+                font-size: 18px;
+                min-width: 100px;
+                min-height: 100px;
+                padding: 10px 10px 10px 210px;
+                margin-left: 20px;
+                background-image: url("https://dancourseuk.files.wordpress.com/2015/02/sign-in-facebook.png");
+                background-size: cover;
+            }
+             .spotify-btn{
+                text-decoration: none;
+                font-size: 18px;
+                min-width: 100px;
+                min-height: 100px;
+                padding: 10px 10px 14px 250px;
+                margin-left: 20px;
+                background-image: url("https://uptune.herokuapp.com/assets/login-button-mobile-82c2ef9bca0473f7f2ce860eca70cfb7318b25edf58d27994a0a5f5ae1a5d6f4.png");
+                background-size: cover;
+            }
+
+             .github-btn{
+                text-decoration: none;
+                font-size: 18px;
+                min-width: 100px;
+                min-height: 100px;
+                padding: 30px 10px 10px 200px;
+                margin-left: 20px;
+                background-image: url(" https://mattstauffer.com/assets/images/content/Screen-Shot-2015-07-16-at-1.45.52-PM.png");
+                background-size: cover;
             }
         </style>
     </head>
@@ -60,8 +104,24 @@
         <header>
             <h1>Login using...</h1>
         </header>
-        <main>
+        
             <a class="google-btn" href="/auth/google">Google+</a>
-        </main>
+            <br />
+            <br />
+            <br />
+            <a class="twitter-btn" href="/auth/twitter"></a>
+            <br />
+            <br />
+            <br />
+            <a class="facebook-btn" href="/auth/facebook"></a>
+            <br />
+            <br />
+            <br />
+            <a class="spotify-btn" href="/auth/spotify"></a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <a class="github-btn" href="/auth/github"></a>
     </body>
 </html>
