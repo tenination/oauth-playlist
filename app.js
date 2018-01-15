@@ -39,20 +39,6 @@ app.get('/', (req, res) => {
     res.render('home', { user: req.user });
 });
 
-// const client = new Twitter({
-//   consumer_key: 'Y61TAiKhk8y7n6rroloFzMCcN',
-//   consumer_secret: 'U9gDRaWA0IMf4BcGlkxoGJegDnCeAOa2MZtfNeHnipDABWeQsA',
-//   access_token_key: '887772313512529921-NN3EEixoK6eOTCrtFfbyNCxkjNiXYDj',
-//   access_token_secret: '10Qv0n2zXIQa6YFv4KrJcwYLDz60XWQBIgyT6OQZXDrQN'
-// });
-
-const client = new Twitter({
-  consumer_key: 'Y61TAiKhk8y7n6rroloFzMCcN',
-  consumer_secret: 'U9gDRaWA0IMf4BcGlkxoGJegDnCeAOa2MZtfNeHnipDABWeQsA',
-  access_token_key: '951844182599061507-0eTWGOqkF93lSTGr5WKK7vM5sn3mD7a',
-  access_token_secret: '4osbYKRWF4v8FBAGvTDU7gDHBJoDSA71QctQjOjCZEFlw'
-});
-
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -64,8 +50,8 @@ var transporter = nodemailer.createTransport({
 var mailOptions = {
   from: keys.email.user,
   to: 'miachildrensbooks@gmail.com',
-  subject: 'Sending Email using Node.js',
-  text: 'That was easy!'
+  subject: 'Sending Email using Node.js ilkl;ks kljkeasy',
+  html: '<h1>Welcome</h1><p>That was not easy!</p><img '
 };
 
 transporter.sendMail(mailOptions, function(error, info){
@@ -77,5 +63,5 @@ transporter.sendMail(mailOptions, function(error, info){
 });
 
 app.listen(3000, () => {
-    console.log('app now listening for requests on port 3000');
+  console.log('app now listening for requests on port 3000');
 });
